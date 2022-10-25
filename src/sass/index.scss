@@ -1,0 +1,54 @@
+@import './fragments/_main';
+@import './fragments/_header';
+@import './fragments/_footer';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Wancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+html {
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    height: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1000px) {
+  .container {
+    height: 100%;
+
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    height: 100%;
+
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Fjalla One', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}

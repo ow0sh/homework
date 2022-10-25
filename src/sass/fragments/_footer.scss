@@ -1,0 +1,185 @@
+$bgcolor: rgb(4, 187, 126);
+$default-font: 'Noto Sans Wancho', sans-serif;
+
+@media screen and (min-width: 600px) {
+  footer {
+    background-color: black;
+  }
+
+  .subscribe {
+    background-color: $bgcolor;
+    min-height: 130px;
+    width: 100%;
+    padding-top: 50px;
+
+    p {
+      font-size: 25px;
+      max-width: 750px;
+
+      font-family: $default-font;
+    }
+  }
+
+  .email_form {
+    max-width: 700px;
+    min-width: 500px;
+    height: 50px;
+
+    background-color: $bgcolor;
+    border: 0;
+    border-bottom: 2px solid black;
+
+    font-size: 24px;
+    padding-left: 5px;
+  }
+
+  .email_form::placeholder {
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+  }
+
+  .email_form:focus {
+    outline: none;
+  }
+
+  .email_submit {
+    background-color: $bgcolor;
+
+    border: 0;
+    font-size: 22px;
+    position: absolute;
+    right: 260px;
+    margin-top: 10px;
+  }
+
+  .email_submit:focus {
+    outline: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .footer_footer {
+    min-height: 90px;
+
+    .social_img {
+      margin-top: 30px;
+      margin-left: 40px;
+
+      height: 30px;
+      width: 30px;
+    }
+
+    .youtube {
+      border-radius: 100px;
+    }
+
+    .linkedin {
+      background-color: white;
+      border-radius: 3px solid black;
+    }
+  }
+
+  .privacy {
+    margin-top: 30px;
+    a {
+      margin-left: 50px;
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: $bgcolor;
+    }
+  }
+
+  .subscribe_split {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    background-color: black;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: $bgcolor;
+    width: 100%;
+    padding: 20px;
+
+    p {
+      font-size: 18px;
+      font-family: $default-font;
+      margin-bottom: 20px;
+    }
+  }
+
+  .email_form {
+    background-color: $bgcolor;
+    border: 0;
+    width: 430px;
+    border-bottom: 2px solid black;
+
+    font-size: 24px;
+    padding-left: 5px;
+  }
+
+  .email_form::placeholder {
+    color: rgb(44, 44, 44);
+    font-size: 20px;
+  }
+
+  .email_form:focus {
+    outline: none;
+  }
+
+  .email_submit {
+    background-color: $bgcolor;
+    border: 0;
+    font-size: 22px;
+    position: absolute;
+    right: 50px;
+  }
+
+  .email_submit:focus {
+    outline: none;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .footer_footer {
+    min-height: 90px;
+
+    .social_img {
+      margin-top: 30px;
+      margin-left: 40px;
+
+      height: 30px;
+      width: 30px;
+    }
+
+    .youtube {
+      border-radius: 100px;
+    }
+
+    .linkedin {
+      background-color: white;
+      border-radius: 3px solid black;
+    }
+  }
+
+  .privacy {
+    display: none;
+  }
+}
